@@ -38,9 +38,9 @@ jobs:
       uses: actions/checkout@v2
   
     - name: Set up Docker
-      uses: docker/setup-docker@v4
+      uses: uses: docker-practice/actions-setup-docker@v1
       with:
-        docker_version: '28.1.1'
+        docker_version: '20.10'
   
     - name: Build Docker Image
       run: docker build -f Dockerfile -t myapp:latest .
